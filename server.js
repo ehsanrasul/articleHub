@@ -4,7 +4,10 @@ const cors = require('cors')
 require('dotenv').config()
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
+const jwt = require('jsonwebtoken')
+
 const articleRouter = require('./Routes/articleRoutes')
+
 
 app.use(express.json())
 
